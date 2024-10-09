@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VENDING MACHINE</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- <link rel="stylesheet" href="img/kintek.png"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@100&family=Moul&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script> 
+    <!-- <script src="JS/script.js"></script> -->
+    <script src="JS/payments.js"></script>
+</head>
+<body>
+
+    <div class="table_contain">
+        <!-- ចំណងជើងនៃមាតិការ -->
+        <div class="title">
+            <img src="img/kintek.png" alt="KINTEK-LOGO">
+            <h1>សូមស្វាគមន៍មកកាន់<br>NPIC SMART LAUNDRY</h1> 
+        </div>
+
+
+        <!-- កន្លែងទិញសាប៊ូ -->
+        <div class="soap">
+            <div class="soap_title">
+                    <h2>ទិញសាប៊ូ</h2>
+            </div>
+
+
+            <div class="soap_money">
+                <!-- Button 500 -->
+                <button class="button" onclick="button_soap(1)">
+                    <span class="button_lg_soap" id="button_soap1">
+                        <span class="button_sl_soap"></span>
+                        <span class="button_text_soap">ចំណុះ 5000ml តម្លៃ ៥០០រៀល</span>
+                    </span>
+                </button>
+
+                <!-- Button 1000 -->
+                <button class="button" onclick="button_soap(2)">
+                    <span class="button_lg_soap" id="button_soap2">
+                        <span class="button_sl_soap"></span>
+                        <span class="button_text_soap">ចំណុះ 100ml តម្លៃ ១០០០រៀល</span>
+                    </span>
+                </button>
+                
+                <!-- Button 1500 -->
+                <button class="button" onclick="button_soap(3)">
+                    <span class="button_lg_soap" id="button_soap3">
+                        <span class="button_sl_soap"></span>
+                        <span class="button_text_soap">ចំណុះ 150ml តម្លៃ ១៥០០រៀល</span>
+                    </span>
+                </button>
+
+                <!-- Button 2000 -->
+                <button class="button" onclick="button_soap(4)">
+                    <span class="button_lg_soap" id="button_soap4">
+                        <span class="button_sl_soap"></span>
+                        <span class="button_text_soap">ចំណុះ 200ml តម្លៃ ២០០០រៀល</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+
+        <!-- កន្លែងទិញទឹកក្រអូប -->
+        <div class="perfume">
+            <div class="perfume_title">
+                <h2>ទិញទឹកក្រអូប</h2>
+            </div>
+
+            <div class="perfume_money">
+                <!-- Button 500 -->
+                <button class="button" onclick="button_perfume(1)">
+                    <span class="button_lg_perfume" id="button_perfume1">
+                        <span class="button_sl_perfume"></span>
+                        <span class="button_text_perfume">ចំណុះ 5000ml តម្លៃ ៥០០រៀល</span>
+                    </span>
+                </button>
+
+                <!-- Button 1000 -->
+                <button class="button" onclick="button_perfume(2)">
+                    <span class="button_lg_perfume" id="button_perfume2">
+                        <span class="button_sl_perfume"></span>
+                        <span class="button_text_perfume">ចំណុះ 100ml តម្លៃ ១០០០រៀល</span>
+                    </span>
+                </button>
+                
+                <!-- Button 1500 -->
+                <button class="button" onclick="button_perfume(3)">
+                    <span class="button_lg_perfume" id="button_perfume3">
+                        <span class="button_sl_perfume"></span>
+                        <span class="button_text_perfume">ចំណុះ 150ml តម្លៃ ១៥០០រៀល</span>
+                    </span>
+                </button>
+
+                <!-- Button 2000 -->
+                <button class="button" onclick="button_perfume(4)">
+                    <span class="button_lg_perfume" id="button_perfume4">
+                        <span class="button_sl_perfume"></span>
+                        <span class="button_text_perfume">ចំណុះ 200ml តម្លៃ ២០០០រៀល</span>
+                    </span>
+                </button>
+            </div>
+                
+        </div>
+
+        <div class="payments">
+                <button onclick="button_payments()">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front text"> បង់ប្រាក់ </span>
+                </button>
+        </div>
+
+
+
+
+    </div>
+</body>
+</html>
